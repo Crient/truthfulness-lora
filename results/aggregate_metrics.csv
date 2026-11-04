@@ -1,0 +1,7 @@
+run_id,method,scope,questions,mc1,mc2,evidence_date,notes
+original_20261027,Original Qwen3-1.7B,full,817,0.2937576499388005,0.45871982837963327,2026-10-27,No LoRA adapter
+approach1_20261027,Standard LoRA SFT,full,817,0.2668298653610771,0.4396841546634628,2026-10-27,9.5k HaluEval train items; one supervised target each
+f2_lite_full_20261104,F2-Lite multi-objective LoRA,full,817,0.26805385556915545,0.4526701831235688,2026-11-04,28.5k derived train records; three objectives
+original_pilot_20261104,Original Qwen3-1.7B,pilot,100,0.3,0.47722667567919963,2026-11-04,First 100 TruthfulQA questions only
+f2_lite_pilot_20261104,F2-Lite pilot LoRA,pilot,100,0.26,0.48676865082845533,2026-11-04,First 100 TruthfulQA questions only
+approach1_smoke_20261027,Standard LoRA SFT,smoke,20,0.25,0.38734826784446885,2026-10-27,First 20 TruthfulQA questions; not final evaluation

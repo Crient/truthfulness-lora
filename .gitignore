@@ -1,0 +1,47 @@
+# Environments, caches and local credentials
+.venv/
+venv/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.pip_cache/
+.cache/
+hf_cache/
+.huggingface/
+.env
+.env.*
+*.env
+.aws/
+.codex/
+.agents/
+.ssh/
+*credentials*
+*secret*
+*.pem
+*.key
+# Private data, models, historical outputs and logs
+data/
+datasets/
+adapters/
+checkpoints/
+**/checkpoint-*/
+*.safetensors
+*.bin
+*.pt
+*.pth
+*.arrow
+*.parquet
+*.jsonl
+/results/**
+!/results/aggregate_metrics.csv
+logs/
+*.log
+*.out
+*.err
+/tmp/
+/research_audit*/
+*.zip
+*.tar
+*.tar.gz
+# Local release-review artifacts
+/release_review/
