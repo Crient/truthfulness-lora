@@ -4,7 +4,7 @@
 
 The researcher reports that **Professor Salem Othman gave permission to share this educational fine-tuning work**. This records the researcher's account; it does not assert a written institutional license or imply endorsement. Faculty sharing permission is no longer listed as unknown. The repository and accessible history have now been inspected; the earlier statement that the remote could not be read is superseded.
 
-Researcher Gechleng (Leng) Lim, Professor Salem Othman, Wentworth Institute of Technology and UMass Unity HPC are acknowledged in the [README](../README.md). Existing project source and notebook adaptations retain their provenance. No blanket project `LICENSE` has been added, and no third-party ownership is claimed. MIT is a reasonable reuse option for original project-authored code if its owner confirms that scope; the owner still needs to select any license grant. Public source visibility and a grant to reuse it are separate decisions.
+Researcher Gechleng (Leng) Lim, Professor Salem Othman, Wentworth Institute of Technology and UMass Unity HPC are acknowledged in the [README](../README.md). Existing project source and notebook adaptations retain their provenance. **The owner has deliberately deferred a project-wide license while authorizing public visibility.** No blanket project `LICENSE` has been added, no broad project-code reuse grant is made, and no third-party ownership is claimed. Source visibility and a grant to reuse it are separate decisions; upstream resources retain their own terms and notices.
 
 ## Exact recorded sources
 

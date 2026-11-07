@@ -18,7 +18,7 @@ An exploratory undergraduate AI research study comparing four model recipes on *
 |:--|:--|--:|--:|
 | Base | Released Qwen3-1.7B checkpoint without additional project training. | **23.623** | 37.561 |
 | SFT | Standard LoRA fine-tuning using correct HaluEval answers. | 22.399 | 39.233 |
-| F2-Lite | Three-task LoRA combining direct QA, background retrieval and knowledge-grounded QA. | 21.053 | 38.176 |
+| F2-Lite | Three-task LoRA combining direct QA, supporting-background prediction and knowledge-grounded QA. | 21.053 | 38.176 |
 | DPO | SFT-initialized preference optimization using cleaned UltraFeedback preferences. | 23.501 | **42.050** |
 
 ## Understanding the Four Approaches

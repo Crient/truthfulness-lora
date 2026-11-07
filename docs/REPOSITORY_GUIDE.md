@@ -40,7 +40,7 @@ truthfulness-lora/
 
 The Slurm scripts retain their bytes and resolve inputs from the submission/project root. [Submission examples](../scripts/slurm/README.md) reflect their new location. Historical notebooks and Python runners retain their original locations because the legacy code relies on them. Historical document links and current checksums are updated; original manifest paths describe the earlier snapshots rather than the current layout.
 
-A project `LICENSE` may be added once the owner selects terms covering the included project-authored code. None is invented here. The citation file lists the established researcher; the faculty advisor remains acknowledged separately, without assuming coauthorship, a DOI or peer-reviewed publication.
+The owner has chosen public visibility **without a project-wide `LICENSE` for now**. A license can be considered later if the owner selects terms covering the included project-authored code; none is invented here. The citation file lists the established researcher; the faculty advisor remains acknowledged separately, without assuming coauthorship, a DOI or peer-reviewed publication.
 
 ## Public repository versus research archive
 
@@ -60,20 +60,20 @@ The existing `release/EXCLUDED_FILES.json` contains safe aliases, categories, si
 
 The accessible history was reviewed for prohibited artifacts, credential patterns, private machine paths and notebook outputs. No such finding requires a new repository or history rewrite. A fresh public repository is a presentation choice if a smaller provenance history is preferred; it is not required by a detected secret. Use the existing repository if the owner is comfortable making the reviewed historical provenance public. This is a bounded local audit, not a guarantee that pattern scanning detects every secret.
 
-## Recommended GitHub metadata
+## GitHub publication metadata
 
 **About description:**
 
 > Exploratory comparison of SFT, F2-Lite, and DPO on Qwen3-1.7B using 817 TruthfulQA questions.
 
-**Topics:** `llm`, `llm-evaluation`, `lora`, `dpo`, `peft`, `qwen3`, `truthfulqa`, `pytorch`, `fine-tuning`, `undergraduate-research`, `reproducible-research`.
+**Topics:** `lora`, `qwen3`, `dpo`, `peft`, `truthfulqa`, `fine-tuning`, `llm-evaluation`, `machine-learning`.
 
-These are recommendations only; repository-wide settings were not changed during branch work. [CITATION.cff](../CITATION.cff) supplies citation metadata without asserting a public release, ownership grant or publication venue.
+These are the owner-selected publication settings; their final values are verified on GitHub after the visibility change. [CITATION.cff](../CITATION.cff) supplies citation metadata without asserting a GitHub Release, ownership grant or publication venue.
 
 ## Publication decisions and optional future work
 
 The researcher reports Professor Salem Othman has already given permission to share the educational work. That account is recorded; the same faculty permission is not requested again. [Source notices](RIGHTS_AND_NOTICES.md) distinguish that permission from third-party terms and project-code reuse licensing.
 
-Before publication, the owner should review the final rendered README and inventory, select any project-code reuse terms, and explicitly decide when the repository becomes public. No visibility change, merge or release is part of this branch update.
+On November 7, 2026, the owner explicitly authorized merging the reviewed branch into `main` and changing the existing repository to public after final checks pass. Project-code licensing is deliberately deferred, and no GitHub Release, dataset/weight publication or GPU workload is authorized. The [final publication-readiness record](../release/PUBLICATION_READINESS.md) documents the checked tree and retained boundaries; GitHub's current repository and pull-request state record whether the authorized operations have completed.
 
 Multiple training seeds, independent factual annotations, stronger decontamination and a full clean CUDA/GPU replay are **future research/reproduction improvements**, not prerequisites for publishing this accurately scoped educational experiment. Failed quality gates remain limitations rather than being recast as passes. The full [limitations](LIMITATIONS.md) and [reproduction boundary](REPRODUCTION.md) remain prominent.

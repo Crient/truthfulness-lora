@@ -1,12 +1,12 @@
-# Publication decisions and reproduction boundaries
+# Publication scope and reproduction boundaries
 
-The presentation is prepared on the private `research/final-release-review` branch. This page supersedes preparation-time administrative language in archived candidate/QC records. It distinguishes publication choices from limitations of the experiment.
+The owner explicitly authorized merging `research/final-release-review` into `main` and making `Crient/truthfulness-lora` public after final checks pass, on November 7, 2026. This page supersedes preparation-time administrative language in archived candidate/QC records. It distinguishes the owner's publication choices from limitations of the experiment. See [PUBLICATION_READINESS.md](PUBLICATION_READINESS.md) for the final verification scope.
 
-## Decisions before public publication
+## Recorded publication decisions
 
-1. **Owner's publication decision.** Review the rendered README, public/archive inventory and historical provenance, then decide whether and when to make the existing repository public. This task authorizes review-branch commits/pushes only; it does not authorize visibility changes, a merge or a public release.
-2. **Project-code reuse terms.** No project license has been assigned. The owner should select any desired license covering project-authored code and confirm its scope; MIT is an option, not a grant made here. Preserve third-party attribution. Public visibility without a project license does not itself grant broad reuse rights.
-3. **Distribution scope.** Publish the reviewed code/documentation/aggregate evidence. Keep datasets, answer records, weights, checkpoints, private reviewer packets, credentials, logs, ZIPs, caches and environments outside version control. The [repository guide](../docs/REPOSITORY_GUIDE.md) explains which sanitized provenance files are safe but optional public material and how history remains visible.
+1. **Visibility and integration.** Merge through a pull request with preserved history, verify the final `main` tree, then change visibility to public. No force-push, history rewrite or GitHub Release is authorized.
+2. **Project-code reuse terms.** A project-wide license is deliberately deferred. No project `LICENSE` or blanket MIT grant is created. Preserve third-party attribution and notices; public visibility does not itself grant broad project-code reuse rights.
+3. **Distribution scope.** Publish the reviewed code/documentation/aggregate evidence and retained historical provenance. Keep datasets, answer records, weights, checkpoints, private reviewer packets, credentials, logs, ZIPs, caches and environments outside version control. The [repository guide](../docs/REPOSITORY_GUIDE.md) explains the public/archive boundary and how history remains visible.
 
 ## Permission and source notices already recorded
 
@@ -20,4 +20,4 @@ Exact pinned Qwen, HaluEval mirror, Argilla and TruthfulQA notices/cards, plus t
 - The preference-quality and answer-only shortcut gates remain failed. One seed, nominal item-bootstrap intervals, data/recipe/compute confounding, bounded leakage checks and post-hoc analyses limit claims. These are legitimate scientific limitations; stronger causal/factual/seed-robust claims would require new evidence.
 - MC1 and MC2 rank existing answer choices. Higher MC2 is not generated-answer factual accuracy or proof of broad hallucination reduction.
 
-Historical evidence is preserved. [PRESENTATION_REVIEW.md](PRESENTATION_REVIEW.md) records the latest checks; [INTEGRATION_REVIEW.md](INTEGRATION_REVIEW.md) records the earlier integration. No license grant, merge, visibility change, release or new model workload is part of this update.
+Historical evidence is preserved. [PRESENTATION_REVIEW.md](PRESENTATION_REVIEW.md) and [INTEGRATION_REVIEW.md](INTEGRATION_REVIEW.md) are earlier snapshots whose private-review status was accurate at the time. The final authorization permits the merge and visibility change only after checks pass; it does not create a license grant, GitHub Release or new model workload.
