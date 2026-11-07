@@ -1,0 +1,25 @@
+{
+  "approval_claimed": false,
+  "checked_at": "2026-11-06T23:13:07-05:00",
+  "exact_cached_cards": [
+    {
+      "alias": "halueval_pinned_card",
+      "declared_license": "apache-2.0",
+      "sha256": "8036cd9948d7d92fe90700cdde156922811dadc738a67b702ed04c5b2639ad08"
+    },
+    {
+      "alias": "argilla_cleaned_pinned_card",
+      "declared_license": "mit",
+      "sha256": "b0364fe4bbce4581dece22e0c5938695362edc9245135f59aae925173a18e770"
+    }
+  ],
+  "public_release_cleared": false,
+  "unresolved": [
+    "HaluEval mirror versus upstream scope",
+    "Mixed-source/generated response conditions",
+    "Project ownership and license",
+    "Exact pinned Qwen/TruthfulQA notices not retrieved",
+    "Applicable faculty/institutional approvals",
+    "Existing remote repository license and tree"
+  ]
+}

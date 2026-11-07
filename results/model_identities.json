@@ -1,0 +1,15 @@
+{
+  "adapter_sha256": {
+    "DPO": "b43bce700d1d0e9baa62a47ad21d2942ea762cb438f038c51b12acfdfe29adba",
+    "F2-Lite": "77cf712941156f7659ccdcaaaed29c4192a0da8d4be90b8f98b2ea955b8cc0e8",
+    "SFT": "4bfa8286577e7c4c9aae081e7d500067083223ee73af4da125701dfb0b4212ba"
+  },
+  "base_model": "Qwen/Qwen3-1.7B",
+  "base_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "note": "Model assets are excluded; these identify recorded evaluated bytes, not reproduced portable outputs.",
+  "selected_updates": {
+    "DPO": 3000,
+    "F2-Lite": 6000,
+    "SFT": 2000
+  }
+}

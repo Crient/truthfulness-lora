@@ -1,0 +1,62 @@
+{
+  "source_identifiers": "Safe aliases; original private paths and runtime identifiers omitted",
+  "inputs": [
+    {
+      "source_alias": "sft_training_notebook",
+      "original_sha256": "0837bb37197d91bc0ee28b7529e7967a1af19d0210eaf10b5e2ce3ed05c19338"
+    },
+    {
+      "source_alias": "f2_lite_training",
+      "original_sha256": "860e816f3c88ace101670cb65ba58a22f3df9c1e74139a582de261dfa51d260e"
+    },
+    {
+      "source_alias": "dpo_common",
+      "original_sha256": "ecfcd4ef0856d891aee84e43b249e97cf873d5a92bdb87f7d7d5e845c59f34d3"
+    },
+    {
+      "source_alias": "validated_dpo_core",
+      "original_sha256": "76d1fd18fcff0ea62f7ff66aba9d434bd77011672c3c7adea45d30d09c7caec8"
+    },
+    {
+      "source_alias": "dpo_full_trainer",
+      "original_sha256": "8705d048a38bba700ccfccaa264b015a2bf453d626de70eef9197d7b2f8fc461"
+    },
+    {
+      "source_alias": "ultrafeedback_preprocessing",
+      "original_sha256": "70dadf163e3eaa9dc4bcdad5c7ec147ac1a003d0150d51c1c19babd8eb252500"
+    },
+    {
+      "source_alias": "matched_four_arm_evaluator",
+      "original_sha256": "6289cc9744c08b5d9a3ee56ffd828edabd44fb090e528327a34b95127b056250"
+    },
+    {
+      "source_alias": "halueval_preprocessing_notebook",
+      "original_sha256": "db9f8d8e9908dcdfcef71ce57648ca983df970b775a60e2fa0c30885821ef516"
+    },
+    {
+      "source_alias": "dpo_frozen_run_manifest",
+      "original_sha256": "77397a2f9646ea43e80a7920e3b930546a653a3582ed5d07b4d8f128ed0085f7"
+    },
+    {
+      "source_alias": "dpo_dataset_manifest",
+      "original_sha256": "571be10932e527fb700399756613c79c0369e0835e222d7e74631a511cdd1b2b"
+    },
+    {
+      "source_alias": "final_matched_results",
+      "original_sha256": "4d3871d2fd6bac93f8066463e1bc0aba185130345ef8e5f54a897f90fb8bcfdc"
+    },
+    {
+      "source_alias": "final_scientific_report",
+      "original_sha256": "e95226176b64368511d49829719f496ca7a16477f3ec2eec99ec80cc20989c7d"
+    }
+  ],
+  "adaptations": [
+    "Notebook helper extraction; explicit model/split/fresh-output configuration",
+    "F2-Lite calls extracted helpers rather than executing notebook cells",
+    "DPO runtime paths, relative imports and input bindings replace private gate/lineage paths",
+    "DPO algorithm, masks, validation selection and atomic state logic retained",
+    "Default private reviewer-packet generation omitted; downstream manifest bytes differ",
+    "Evaluator uses supplied F2 and successful DPO run; output fresh by CLI",
+    "CPU tested only; no GPU replay or equality claim for adapted entry points"
+  ]
+}

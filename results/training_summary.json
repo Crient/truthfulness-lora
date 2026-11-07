@@ -1,0 +1,17 @@
+{
+  "elapsed_seconds": 32428.51642971998,
+  "epochs_completed": 1,
+  "f2_lite_full_updates": 7125,
+  "pair_presentations_at_selected": 12000,
+  "pair_presentations_at_stop": 18000,
+  "peak_allocated_GiB": 19.852214336395264,
+  "reason": "validation_patience",
+  "reference_unchanged": true,
+  "run_alias": "exploratory-dpo-v3",
+  "selected_update": 3000,
+  "selected_validation_loss": 0.4930704060779317,
+  "selection": "validation DPO loss only, including initial SFT eligibility",
+  "sft_full_updates": 2375,
+  "status": "SUCCESS",
+  "updates": 4500
+}

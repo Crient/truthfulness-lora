@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](APPROACHES.md), [matched results](RESULTS.md), [limitations](LIMITATIONS.md) and [release blockers](../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # Reproducibility Guide
 
 **Status:** The saved scores can be independently recalculated from the exported samples. Full training is **not yet a one-command, portable reproduction**: model/data caches and adapter weights were excluded, exact historical dependencies and tokenizer revision are incompletely pinned, and Unity paths are hard-coded in the original scripts.

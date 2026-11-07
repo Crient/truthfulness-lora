@@ -1,0 +1,310 @@
+{
+  "candidate": "truthfulness-lora-20261107-rc1",
+  "exclusions": "release/EXCLUDED_FILES.json",
+  "files": [
+    {
+      "bytes": 185,
+      "path": ".gitignore",
+      "purpose": "Project setup, inspection entry point or checksum metadata",
+      "sha256": "150543643dcda5813c95b56cbdf4807c2139cecbefad9f421a22bc6536664f2f"
+    },
+    {
+      "bytes": 4340,
+      "path": "README.md",
+      "purpose": "Project setup, inspection entry point or checksum metadata",
+      "sha256": "3cb89e1a144da27349c2a51bf353b48b4867ca4b624247535cee7d4e6e51ed4f"
+    },
+    {
+      "bytes": null,
+      "path": "SHA256SUMS",
+      "purpose": "Project setup, inspection entry point or checksum metadata",
+      "sha256": null
+    },
+    {
+      "bytes": 316,
+      "path": "configs/dpo.json",
+      "purpose": "Observed configuration or safe pinned input hashes",
+      "sha256": "21fb7789cc9610f9c5d16daed031958bae7c7d019b9c4e3e70aad31a8faefad3"
+    },
+    {
+      "bytes": 730,
+      "path": "configs/f2_lite.json",
+      "purpose": "Observed configuration or safe pinned input hashes",
+      "sha256": "91f85f656222f4bb2bd95759c84d86f48a0730d57fad19f115e45ec2d5e3d852"
+    },
+    {
+      "bytes": 1857,
+      "path": "configs/input_identities.json",
+      "purpose": "Observed configuration or safe pinned input hashes",
+      "sha256": "e38965627b074561981b7ab859137fc12b02e21906084c4910672b7a621ac964"
+    },
+    {
+      "bytes": 728,
+      "path": "configs/sft.json",
+      "purpose": "Observed configuration or safe pinned input hashes",
+      "sha256": "8d3fc75d4b5f8723c50cc9f6606f7850833746dd363aa583eb8076f30a8564c3"
+    },
+    {
+      "bytes": 5830,
+      "path": "docs/APPROACHES.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "e43b9ec8e01e889a80c6569e6e09f647f046e7bc5e958f4bbe1075cf5b94fc3b"
+    },
+    {
+      "bytes": 3944,
+      "path": "docs/DATA_AUDIT.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "7dc35847698c3b00e555e0124797e63e9327f05224b40e32f0361dc71093dd8b"
+    },
+    {
+      "bytes": 2865,
+      "path": "docs/LIMITATIONS.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "14fbd485c998fefbec4b225529c2db2ca3b9ba4d1b5e660b037a8b818dcc38aa"
+    },
+    {
+      "bytes": 7774,
+      "path": "docs/REPRODUCTION.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "d46fc064d593da0117e4ff7ce141726368668c147e250cf5f6eca3948336aaac"
+    },
+    {
+      "bytes": 22165,
+      "path": "docs/RESEARCH_REPORT.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "bf8938b57d93b6e9eec8e812f118701e07a86e6d3ae7a97dc0460c8ba07ef9ae"
+    },
+    {
+      "bytes": 3436,
+      "path": "docs/RESULTS.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "4bc328986458cc595af0d49f2b80343c0287fade1ee44b1cf3d522995c81e88d"
+    },
+    {
+      "bytes": 3885,
+      "path": "docs/RIGHTS_AND_NOTICES.md",
+      "purpose": "Sanitized scientific/reproduction/rights narrative",
+      "sha256": "4b50f1cf2c178771564ab00ab1e21b775459493891cc453e702373775f5caaee"
+    },
+    {
+      "bytes": 410,
+      "path": "pyproject.toml",
+      "purpose": "Project setup, inspection entry point or checksum metadata",
+      "sha256": "a636ddbd39993f8da75d73f2a5c817a888e86b8dc720cfeb2bdcc84ad4bc0952"
+    },
+    {
+      "bytes": 2062,
+      "path": "release/BLOCKERS.md",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "e546934461563b9fe84f57dff6350e0acbd7c2066bfe57442b2feff3b87b3820"
+    },
+    {
+      "bytes": null,
+      "path": "release/CANDIDATE_MANIFEST.json",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": null
+    },
+    {
+      "bytes": null,
+      "path": "release/CANDIDATE_MANIFEST.md",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": null
+    },
+    {
+      "bytes": 494069,
+      "path": "release/EXCLUDED_FILES.json",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "3656463b01c92870f2275685157bda95f7e9175b622d792dfc41f6438754a1d5"
+    },
+    {
+      "bytes": 1914,
+      "path": "release/EXCLUDED_FILES.md",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "061f5bd041fa8e723fa01bf686c997a145d0933f5bbbbb19caffb9494300b307"
+    },
+    {
+      "bytes": 805,
+      "path": "release/LICENSE_EVIDENCE.json",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "dcec4e063387dd03304b92d80bef5b67c88be36c82de6e8597a0e32fecfeb869"
+    },
+    {
+      "bytes": 2679,
+      "path": "release/QC_REPORT.json",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "e279b2c73c0cc9231425a14c808334cb271e6939f7b949f17289407fdd4458e4"
+    },
+    {
+      "bytes": 2885,
+      "path": "release/QC_REPORT.md",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "1250f35bd60c613966bdda1801e2198d71d54d9e3ffa333a1168f63f88e32c9d"
+    },
+    {
+      "bytes": 2553,
+      "path": "release/SOURCE_PROVENANCE.json",
+      "purpose": "Candidate scope, blockers, provenance or QC metadata",
+      "sha256": "dede0ae6138e754f2cbe2b011d6a22189a408184d5091be047aec63d8b8ee0e7"
+    },
+    {
+      "bytes": 374,
+      "path": "requirements-training.txt",
+      "purpose": "Project setup, inspection entry point or checksum metadata",
+      "sha256": "3a05922572a8aeee66d8d48c465653250804eb939ce69746b7eb3d31fd39ff1d"
+    },
+    {
+      "bytes": 4612,
+      "path": "results/exploratory_diagnostics.json",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "f0ebd825d90c10a3e1904973627293d07336ca31f2d4f63cb0e7a504fe2f6bdd"
+    },
+    {
+      "bytes": 9212,
+      "path": "results/feature_bins.csv",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "0acdc4619a70aa2f9b7eab288cb51e3e688d106a21f76668eef6a8625afab91b"
+    },
+    {
+      "bytes": 1371,
+      "path": "results/feature_correlations.csv",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "90cb6b95c6d1d36cea5ef2161554e01c055f0df2e1a678d8737fb12ed96b4421"
+    },
+    {
+      "bytes": 4770,
+      "path": "results/matched_results.json",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "123cac873de05e935ab570c420c847618f5156f5aabd3e563bc06219df788a5d"
+    },
+    {
+      "bytes": 880,
+      "path": "results/mc1_mc2_decomposition.csv",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "50b367721cdca1155c93695662da993c282b4218d0a320785c8f6d215b346128"
+    },
+    {
+      "bytes": 535,
+      "path": "results/mc1_transitions.csv",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "a274ecd9062417348c7a72e6b90c016bdb059b4af9f2850c3e663fb10c58bc2f"
+    },
+    {
+      "bytes": 565,
+      "path": "results/model_identities.json",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "a9a75994c8d372b000adca0a4f4a21602bcb695a95ee40a5db70c5bf9d5d8f63"
+    },
+    {
+      "bytes": 646,
+      "path": "results/scores.csv",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "048980ef2b2a78e55d8c2545c7a44d5014e9952e929eda26b1196f948dafaab9"
+    },
+    {
+      "bytes": 554,
+      "path": "results/training_summary.json",
+      "purpose": "Sanitized aggregate historical evidence; no item text",
+      "sha256": "9ce4731b5620bf058d8c1ff674e544acf11a45984ce604c4bb9f904513d5f6a9"
+    },
+    {
+      "bytes": 108,
+      "path": "src/truthfulness_lora/__init__.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "c3da8db333ac9db77fdb7ef69b24dae856fbcde1d6935fc8ec9fac8bbc4cab2d"
+    },
+    {
+      "bytes": 48,
+      "path": "src/truthfulness_lora/__main__.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "935a1c1166b0c1ea35a82256345000bf2c73ded718d77773bc27a71ecce28f7d"
+    },
+    {
+      "bytes": 4972,
+      "path": "src/truthfulness_lora/cli.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "61b3162887d250b2cbd9bcc8d9c58ef7fbba0c10f87cc5a8bce801a3db83f9c8"
+    },
+    {
+      "bytes": 75,
+      "path": "src/truthfulness_lora/dpo/__init__.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "8a0c6ea61d28ea59a0bff083a7335cf37c915ac6ef3623f1ddcf2f39672895a3"
+    },
+    {
+      "bytes": 2146,
+      "path": "src/truthfulness_lora/dpo/common.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "a7c82edf2d6890a0d751092d2527f87543b52cb3173e3f6f246d18cf15bba9b7"
+    },
+    {
+      "bytes": 1578,
+      "path": "src/truthfulness_lora/dpo/core.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "5c23227bb73ce3803a59f1444db6f48a55602d380256edbcc4378b9b7d7bc50f"
+    },
+    {
+      "bytes": 14420,
+      "path": "src/truthfulness_lora/dpo/dataset.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "739219c1210c45b8cdb41787d92ad0d71ba13a1192e3c6d4a09ab49da7aaeb67"
+    },
+    {
+      "bytes": 4025,
+      "path": "src/truthfulness_lora/dpo/evaluate.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "fe7f0b5c89d791b0ac719e5071a1e364535fc7820083919648a0d98e15697ad4"
+    },
+    {
+      "bytes": 13815,
+      "path": "src/truthfulness_lora/dpo/train.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "2ee0a7e67aeddf8b6ed461b1afe5fc8ee50a3d0a52f2dc20d5ab166eeab23da8"
+    },
+    {
+      "bytes": 6080,
+      "path": "src/truthfulness_lora/f2_lite.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "f00f07077325020e44b2f5aa25410e47eabecf0450cce1ea650fc87b42877460"
+    },
+    {
+      "bytes": 2854,
+      "path": "src/truthfulness_lora/metrics.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "1c7d7617587e320cfb39dd5208cf309cf7fd6f6bcf9b4379aeb1f5ee50a0287d"
+    },
+    {
+      "bytes": 3532,
+      "path": "src/truthfulness_lora/prepare.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "241be30beb369023d5ffc262f50d943d2ac064e46d05f3a318db9ca9ad0d54a4"
+    },
+    {
+      "bytes": 2702,
+      "path": "src/truthfulness_lora/runtime.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "4f0acc5c1ced53eb09fc658d23eace4aafff63aa3b7ae5a39592df380c3ea397"
+    },
+    {
+      "bytes": 10267,
+      "path": "src/truthfulness_lora/supervised.py",
+      "purpose": "Portable code, extracted/adapted original algorithms or explicit runtime wrapper",
+      "sha256": "41173e9410359c38e8e5b1a9b586e8e0a26b396757a2a0dfd93fbac7d9518ce4"
+    },
+    {
+      "bytes": 3767,
+      "path": "tests/test_core.py",
+      "purpose": "Synthetic CPU verification; no third-party answer records",
+      "sha256": "f175ea98a41e4611806685854b7c3b118d2657cd2b06895ab6335d60069dc472"
+    },
+    {
+      "bytes": 2071,
+      "path": "tests/test_public.py",
+      "purpose": "Synthetic CPU verification; no third-party answer records",
+      "sha256": "3a1c882e571661f3134e4fefb8d4bb224c4455e917f961d7be1de12ca1c51117"
+    }
+  ],
+  "hash_boundary": "This manifest and its Markdown companion plus SHA256SUMS omit self-referential size/hash fields; final SHA256SUMS seals all other files",
+  "public_release_blocked": true,
+  "source_provenance": "release/SOURCE_PROVENANCE.json",
+  "status": "PRIVATE_PENDING_INSPECTION"
+}

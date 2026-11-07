@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](APPROACHES.md), [matched results](RESULTS.md), [limitations](LIMITATIONS.md) and [release blockers](../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # Methods and Experimental Design
 
 **Frozen record of Approaches 1 and 2 — November 4, 2026**
@@ -244,7 +246,7 @@ The benchmark's saved code applies `np.exp(ll)` directly. Candidate lengths, the
 
 Full baseline, Approach 1 and F2 sample files contain one record per task/question (`doc_id`, `doc`, `acc`). This audit independently verified exact document-content and question-ID equality across the **817 paired items**. The independent statistical unit for the paired benchmark bootstrap is the **question**, not the individual answer option or each of the three F2 training objectives.
 
-For comparison `A − B`, calculate per-question differences `d_i = acc_A,i − acc_B,i`; resample 817 indices with replacement 10,000 times; take the 2.5th and 97.5th percentiles of the resampled means. The generated `analysis/verify_truthfulqa_samples.py` reproduces this procedure with **sorted integer question IDs and a new NumPy RNG initialized to seed 42 for each pair/task**. Historical analyses used related but slightly different ordering/RNG consumption. See [`RESULTS.md`](RESULTS.md) for the reported and independently recomputed endpoints.
+For comparison `A − B`, calculate per-question differences `d_i = acc_A,i − acc_B,i`; resample 817 indices with replacement 10,000 times; take the 2.5th and 97.5th percentiles of the resampled means. The generated `analysis/verify_truthfulqa_samples.py` reproduces this procedure with **sorted integer question IDs and a new NumPy RNG initialized to seed 42 for each pair/task**. Historical analyses used related but slightly different ordering/RNG consumption. See [`RESULTS.md`](HISTORICAL_RESULTS_20261104.md) for the reported and independently recomputed endpoints.
 
 ## 9. Key unaddressed validity questions
 

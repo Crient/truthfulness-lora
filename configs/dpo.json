@@ -1,0 +1,17 @@
+{
+  "accumulation": 4,
+  "alpha": 32,
+  "attention": "eager",
+  "beta": 0.1,
+  "epochs": 3,
+  "gradient_clip": 1.0,
+  "learning_rate": 5e-06,
+  "max_length": 2048,
+  "min_delta": 0.0001,
+  "patience": 3,
+  "precision": "float32",
+  "rank": 16,
+  "scheduler": "constant",
+  "seed": 42,
+  "validation_interval": 500
+}

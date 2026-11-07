@@ -45,3 +45,19 @@ logs/
 *.tar.gz
 # Local release-review artifacts
 /release_review/
+# Integrated candidate build artifacts, fresh runs and OS metadata
+.DS_Store
+*.egg-info/
+build/
+dist/
+outputs/
+# Only reviewed aggregate outputs may be tracked; raw records stay excluded.
+!/results/exploratory_diagnostics.json
+!/results/feature_bins.csv
+!/results/feature_correlations.csv
+!/results/matched_results.json
+!/results/mc1_mc2_decomposition.csv
+!/results/mc1_transitions.csv
+!/results/model_identities.json
+!/results/scores.csv
+!/results/training_summary.json

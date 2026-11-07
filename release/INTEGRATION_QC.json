@@ -1,0 +1,116 @@
+{
+  "parse_checks": {
+    "python_ast": 19,
+    "json": 21,
+    "output_free_historical_notebooks": 5,
+    "csv": 6,
+    "slurm_syntax": 6
+  },
+  "local_markdown_links": 142,
+  "external_reference_urls": [
+    "https://aclanthology.org/2022.acl-long.229/",
+    "https://aclanthology.org/2023.emnlp-main.397/",
+    "https://arxiv.org/abs/2109.07958",
+    "https://arxiv.org/abs/2305.11747",
+    "https://arxiv.org/abs/2305.18290",
+    "https://arxiv.org/abs/2310.01377",
+    "https://arxiv.org/abs/2406.11267",
+    "https://arxiv.org/abs/2505.09388",
+    "https://github.com/Crient/truthfulness-lora",
+    "https://github.com/EleutherAI/lm-evaluation-harness",
+    "https://github.com/RUCAIBox/HaluEval/blob/main/LICENSE",
+    "https://github.com/sylinrl/TruthfulQA",
+    "https://github.com/sylinrl/TruthfulQA/blob/main/README.md",
+    "https://huggingface.co/Qwen/Qwen3-1.7B",
+    "https://huggingface.co/datasets/argilla/ultrafeedback-binarized-preferences-cleaned/blob/770076f077c4c5e298498fa32f804857f46d5134/README.md",
+    "https://huggingface.co/datasets/openbmb/UltraFeedback",
+    "https://huggingface.co/datasets/pminervini/HaluEval",
+    "https://huggingface.co/datasets/truthfulqa/truthful_qa"
+  ],
+  "aggregate_pairs_checked": 6,
+  "mc1_transition_tables_checked": 6,
+  "decomposition_comparisons_checked": 3,
+  "feature_bin_groups_checked": 24,
+  "content_pattern_findings": [],
+  "historical_unchanged_files": 16,
+  "initial_tracked_files": 27,
+  "initial_ignored_and_untracked_artifacts_unchanged": true,
+  "candidate_files": 50,
+  "candidate_files_byte_unchanged": 41,
+  "candidate_files_adapted": 9,
+  "wheel_resource_and_payload_audit": "PASS",
+  "all_checks": "PASS",
+  "review_date": "2026-11-07",
+  "branch": "research/final-release-review",
+  "base_commit": "ead40cedad88e214d8033b3ecf0774e86e04e96a",
+  "scope": "Private branch integration checks only; original ZIP QC is retained separately.",
+  "environment": {
+    "python": "3.12.14",
+    "platform": "macOS ARM64",
+    "numpy": "2.2.6",
+    "torch": "2.9.1",
+    "transformers": "4.57.6",
+    "peft": "0.18.1",
+    "tokenizers": "0.22.2",
+    "safetensors": "0.8.0",
+    "datasets": "4.4.1",
+    "pyarrow": "26.0.1",
+    "historical_cuda_lock_reproduced": false
+  },
+  "tests": {
+    "available_synthetic_suite": {
+      "discovered": 7,
+      "passed": 6,
+      "skipped": 1,
+      "failed": 0,
+      "skipped_reason": "Optional real-template test requires a supplied local pinned TL_TEST_TOKENIZER",
+      "checked_against": "editable source and installed wheel"
+    },
+    "clean_minimal_wheel_suite": {
+      "passed": 4,
+      "failed": 0,
+      "outside_checkout": true
+    },
+    "root_and_subcommand_help": {
+      "passed": 9
+    },
+    "console_entry_point": "PASS",
+    "missing_arguments_refused": "PASS",
+    "legacy_help_commands": {
+      "passed": 3
+    },
+    "legacy_historical_sample_verification": {
+      "status": "UNAVAILABLE",
+      "exit_code": 2,
+      "reason": "Excluded historical per-question result directory absent"
+    },
+    "legacy_f2_comparison": {
+      "status": "UNAVAILABLE",
+      "exit_code": 1,
+      "reason": "Excluded per-question sample JSONL absent"
+    }
+  },
+  "packaging": {
+    "editable_install": "PASS",
+    "wheel_build": "PASS",
+    "sdist_build": "PASS",
+    "wheel_rebuilt_from_sdist": "PASS",
+    "clean_minimal_wheel_install": "PASS",
+    "packaged_identity_bytes_match_root": true,
+    "pip_check_both_environments": "PASS",
+    "full_clean_research_cuda_install": "NOT RUN"
+  },
+  "external_reference_check_scope": "18 primary-source URLs accessed, including authenticated target-repository metadata; access/identity only, not legal clearance or scientific reproduction.",
+  "gpu_workloads_launched": false,
+  "pretrained_weights_loaded": false,
+  "research_inputs_downloaded": false,
+  "original_item_bootstraps_recomputed": false,
+  "original_model_or_adapter_assets_verified_locally": false,
+  "remaining_blockers": [
+    "Project/component rights and licensing",
+    "Applicable faculty/institutional/coauthor authorization and public-publication authorization",
+    "Full clean research/CUDA environment and original-input/GPU replay",
+    "Single-seed confounded recipes, nominal uncertainty, failed quality/shortcut gates and limited scientific claim scope"
+  ],
+  "overall": "PASS_WITH_PUBLICATION_AND_REPLAY_BLOCKERS"
+}
