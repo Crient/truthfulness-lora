@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # Reproducibility Guide
 
 **Status:** The saved scores can be independently recalculated from the exported samples. Full training is **not yet a one-command, portable reproduction**: model/data caches and adapter weights were excluded, exact historical dependencies and tokenizer revision are incompletely pinned, and Unity paths are hard-coded in the original scripts.
@@ -116,7 +118,7 @@ The original files are tied to this research group's Unity workspace and intende
 ### Approach 1
 
 ```bash
-sbatch run_full_lora.sbatch
+sbatch scripts/slurm/run_full_lora.sbatch
 ```
 
 This runner loads notebook cells `(2, 4, 6)` and executes `(12)` after a small data/tokenization preflight. It requires a GPU allocation, and the notebook's `require_allocated_cuda()` checks `SLURM_JOB_ID` and CUDA. The run refuses populated output directories.
@@ -128,10 +130,10 @@ This runner loads notebook cells `(2, 4, 6)` and executes `(12)` after a small d
 python src/train_f2_lite.py --mode preflight
 
 # GPU jobs: launch sequentially only if preceding steps succeed
-sbatch run_f2_lite_pilot.sbatch
-sbatch run_f2_lite_pilot_eval.sbatch
-sbatch run_f2_lite_full.sbatch
-sbatch run_f2_lite_eval.sbatch
+sbatch scripts/slurm/run_f2_lite_pilot.sbatch
+sbatch scripts/slurm/run_f2_lite_pilot_eval.sbatch
+sbatch scripts/slurm/run_f2_lite_full.sbatch
+sbatch scripts/slurm/run_f2_lite_eval.sbatch
 ```
 
 The pilot evaluates **100** questions and is not a full benchmark. The full evaluation scripts refuse preexisting destination directories. No Slurm dependency chain is implemented; **do not submit all the commands at once**. Check contemporary account, QOS and partition guidance before allocating cluster resources.

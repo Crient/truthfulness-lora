@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # Independent Audit, Corrections and Claims Ledger
 
 **Audit conducted from a read-only research export supplied November 4, 2026.**
@@ -73,7 +75,7 @@ The user-supplied initial README was a useful narrative, but the source package 
 - All context-dependent subcategory changes.
 - 66-question paired bootstrap CIs.
 
-The corresponding numerical tables are retained in [`RESULTS.md`](RESULTS.md) with explicit provenance labels. They should not be described as independently verified until source data, code and fixed IDs are archived.
+The corresponding numerical tables are retained in [`RESULTS.md`](HISTORICAL_RESULTS_20261104.md) with explicit provenance labels. They should not be described as independently verified until source data, code and fixed IDs are archived.
 
 ### Class D — hypotheses / causal interpretations
 

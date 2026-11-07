@@ -1,3 +1,7 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
+> Approach 3 was subsequently completed as exploratory UltraFeedback DPO. This earlier proposal does not establish preregistration or compliance with its proposed controls.
+
 # Approach 3 — Prospective Experiment Protocol
 
 **Status:** Not implemented or run.  
@@ -183,7 +187,7 @@ analysis:
 2. Independently reproduce JSONL means and paired differences with the same analysis script and declared RNG behavior.
 3. Append a new entry to [`EXPERIMENT_LOG.md`](EXPERIMENT_LOG.md) with actual job IDs, dataset/model revisions, resolved hyperparameters and checkpoint hashes.
 4. Append a separate Approach 3 methods section to [`METHODOLOGY.md`](METHODOLOGY.md); preserve historical settings for Approaches 1 and 2 unchanged.
-5. Add Approach 3 rows to [`RESULTS.md`](RESULTS.md), separating pre-specified from exploratory analyses and including every intended comparator.
+5. Add Approach 3 rows to [`RESULTS.md`](HISTORICAL_RESULTS_20261104.md), separating pre-specified from exploratory analyses and including every intended comparator.
 6. Update the README summary and the machine-readable aggregate results table.
 7. Note every deviation from this prospective record. Do not retroactively describe any decision made after inspecting Approach 3 results as preregistered.
 

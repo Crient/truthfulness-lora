@@ -1,0 +1,127 @@
+{
+  "mc2_distributions": {
+    "DPO-minus-Base": {
+      "mean_clipping_differences_to_0p25": 0.01838585812457395,
+      "mean_without_10_largest_absolute_differences": 0.04048641796843431,
+      "mean_without_10_largest_gains": 0.03305439291863689,
+      "mean_without_41_largest_gains": -0.004456221948513039,
+      "near_zero_at_1e-12": 4,
+      "negative": 307,
+      "negative_below_minus_0p1": 154,
+      "negative_mass": -88.25085414025324,
+      "positive": 506,
+      "positive_mass": 124.92276155644818,
+      "positive_over_0p1": 211,
+      "quantiles": {
+        "max": 0.9999652213013075,
+        "median": 2.409303495421388e-05,
+        "min": -0.9999786640622518,
+        "q10": -0.5490630077434746,
+        "q25": -0.016348929000289947,
+        "q75": 0.12011674444876055,
+        "q90": 0.7434802024933083
+      },
+      "top10_positive_fraction": 0.0800255470364194,
+      "top41_positive_fraction": 0.3212379805589531
+    },
+    "DPO-minus-F2-Lite": {
+      "mean_clipping_differences_to_0p25": 0.022145559852206956,
+      "mean_without_10_largest_absolute_differences": 0.033597710196690854,
+      "mean_without_10_largest_gains": 0.029698674086214245,
+      "mean_without_41_largest_gains": 0.0066351694722422,
+      "near_zero_at_1e-12": 4,
+      "negative": 356,
+      "negative_below_minus_0p1": 97,
+      "negative_mass": -35.86048565954485,
+      "positive": 457,
+      "positive_mass": 67.51133925368954,
+      "positive_over_0p1": 185,
+      "quantiles": {
+        "max": 0.8563058701740012,
+        "median": 1.5843556383863068e-05,
+        "min": -0.8696307345500804,
+        "q10": -0.1485997069303301,
+        "q25": -0.0060024482858009,
+        "q75": 0.06909266159137967,
+        "q90": 0.3437648772171085
+      },
+      "top10_positive_fraction": 0.1138182665536416,
+      "top41_positive_fraction": 0.3925557154791055
+    },
+    "DPO-minus-SFT": {
+      "mean_clipping_differences_to_0p25": 0.01871394610329633,
+      "mean_without_10_largest_absolute_differences": 0.022083545315221685,
+      "mean_without_10_largest_gains": 0.02030969763145207,
+      "mean_without_41_largest_gains": 0.003482778477605635,
+      "near_zero_at_1e-12": 4,
+      "negative": 383,
+      "negative_below_minus_0p1": 61,
+      "negative_mass": -20.160561598470135,
+      "positive": 430,
+      "positive_mass": 43.17259640648106,
+      "positive_over_0p1": 129,
+      "quantiles": {
+        "max": 0.8279173249239411,
+        "median": 2.757546572973446e-06,
+        "min": -0.8729406400910142,
+        "q10": -0.06994950216684744,
+        "q25": -0.003577379951674456,
+        "q75": 0.03151293803617672,
+        "q90": 0.17891523082074573
+      },
+      "top10_positive_fraction": 0.15338685579806935,
+      "top41_positive_fraction": 0.4704233796404277
+    }
+  },
+  "scoring": {
+    "DPO_mc2_argmax_changes_vs": {
+      "Base": 405,
+      "F2-Lite": 179,
+      "SFT": 110
+    },
+    "SFT_temperature_sensitivity_mc2": {
+      "0.5": 0.3935132140793382,
+      "1.0": 0.3923325727491122,
+      "2.0": 0.3905569178644465
+    },
+    "benchmark_all_817_targets_match_cached_revision": true,
+    "benchmark_cached_revision": "741b8276f2d1982aa3d5b832d3ee81ed3b896490",
+    "halueval_cached_revision": "12a856119f03975a94509091e8cada3e6be6ead7",
+    "halueval_normalized_shared_knowledge_count": 4,
+    "halueval_seed42_split_order_reconstructed": {
+      "train": true,
+      "validation": true
+    },
+    "limits": "All diagnostics exploratory. Entropy and uniform-choice mass are candidate-set properties, not factual calibration. Scalar temperature changes the estimand and is not a new evaluated model or checkpoint selection. Slope does not identify a causal mechanism. No token-level EOS decomposition is possible from sequence sums.",
+    "mean_mc2_entropy_divided_by_log_choice_count": {
+      "Base": 0.08447529093036313,
+      "DPO": 0.243991344659803,
+      "F2-Lite": 0.2743920685287228,
+      "SFT": 0.27326484260321127
+    },
+    "mean_mc2_minus_uniform_true_mass": {
+      "Base": -0.07279623464849011,
+      "DPO": -0.02791017905951227,
+      "F2-Lite": -0.06665051393606633,
+      "SFT": -0.05607668433247552
+    },
+    "uniform_choice_true_mass_mean": 0.44840925708158763,
+    "within_question_centered_DPO_vs_comparator_score_slope_quantiles": {
+      "Base": [
+        0.07786121516826805,
+        0.264845781329237,
+        0.4492666948127689
+      ],
+      "F2-Lite": [
+        0.85878060302578,
+        1.0864828717463575,
+        1.3012837419285925
+      ],
+      "SFT": [
+        0.9696570097390599,
+        1.090786954494663,
+        1.2274715053196248
+      ]
+    }
+  }
+}

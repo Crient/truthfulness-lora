@@ -1,0 +1,24 @@
+cff-version: 1.2.0
+message: >-
+  If you use this research code or its reported results, please cite this
+  repository and the upstream model, datasets and methods described in the README.
+type: software
+title: "Truthfulness LoRA: Evaluating SFT, F2-Lite and DPO on Qwen3-1.7B"
+authors:
+  - family-names: Lim
+    given-names: Gechleng
+    affiliation: Wentworth Institute of Technology
+repository-code: "https://github.com/Crient/truthfulness-lora"
+url: "https://github.com/Crient/truthfulness-lora"
+abstract: >-
+  An educational, exploratory comparison of the released Qwen3-1.7B checkpoint,
+  HaluEval supervised LoRA, F2-Lite and SFT-initialized UltraFeedback DPO on
+  817 frozen TruthfulQA questions. Reported MC1 and MC2 results use a matched
+  native-chat likelihood protocol and do not establish generated-answer factual
+  accuracy, cross-seed robustness or a DPO-specific causal effect.
+keywords:
+  - large language models
+  - parameter-efficient fine-tuning
+  - LoRA
+  - direct preference optimization
+  - TruthfulQA

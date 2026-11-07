@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # GitHub Publication and Research Continuity Checklist
 
 **Scope:** prepare this work as a credible undergraduate AI research portfolio and a reusable experiment record. This file distinguishes actions that can be completed now from checks requiring advisor/team approval. It does not authorize public release or a Git push.

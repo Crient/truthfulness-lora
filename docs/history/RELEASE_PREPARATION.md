@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # Release preparation — November 4, 2026
 
 This is an isolated proposed source release. Original research files and historical outputs were not edited. The original `.git` directory is empty and read-only; Git reports no repository, so no local history, branch, or remote was available to audit. A new repository is initialized only in this release copy, on `release/research-docs-20261104`. No existing history is overwritten.

@@ -1,0 +1,87 @@
+{
+  "caption": "Saved historical means and nominal 95% item-bootstrap intervals; no cross-seed uncertainty or multiplicity adjustment. MC1 is ranking credit; MC2 is normalized true-choice likelihood mass. Neither is free-generation factual accuracy.",
+  "generated_files_sha256": {
+    "truthfulqa_comparison.png": "9074b1b5e4be082d16ab8571f328ff4561fb403e6f015900bf09d7f703d5ec31",
+    "truthfulqa_comparison.svg": "bb56f76e9472deec59ac1bd7f7587f8a2fdb4f5dcb41fb8d42f12d26fe9103c0"
+  },
+  "generator": "analysis/plot_results.py",
+  "matplotlib": "3.10.8",
+  "question_count": 817,
+  "raw_item_data_used": false,
+  "recipes_in_order": [
+    "Base",
+    "SFT",
+    "F2-Lite",
+    "DPO"
+  ],
+  "source_files_sha256": {
+    "results/matched_results.json": "123cac873de05e935ab570c420c847618f5156f5aabd3e563bc06219df788a5d",
+    "results/scores.csv": "048980ef2b2a78e55d8c2545c7a44d5014e9952e929eda26b1196f948dafaab9"
+  },
+  "values": {
+    "mc1": {
+      "Base": {
+        "mean_percent": 23.623011015911874,
+        "nominal_bootstrap95_percent": [
+          20.807833537331703,
+          26.560587515299876
+        ]
+      },
+      "DPO": {
+        "mean_percent": 23.50061199510404,
+        "nominal_bootstrap95_percent": [
+          20.563035495716033,
+          26.438188494492042
+        ]
+      },
+      "F2-Lite": {
+        "mean_percent": 21.052631578947366,
+        "nominal_bootstrap95_percent": [
+          18.2374541003672,
+          23.867809057527538
+        ]
+      },
+      "SFT": {
+        "mean_percent": 22.399020807833537,
+        "nominal_bootstrap95_percent": [
+          19.583843329253366,
+          25.336597307221542
+        ]
+      }
+    },
+    "mc2": {
+      "Base": {
+        "mean_percent": 37.561302243309754,
+        "nominal_bootstrap95_percent": [
+          34.34744082588429,
+          40.803868431643906
+        ]
+      },
+      "DPO": {
+        "mean_percent": 42.04990780220754,
+        "nominal_bootstrap95_percent": [
+          39.15445558930922,
+          44.95358919449657
+        ]
+      },
+      "F2-Lite": {
+        "mean_percent": 38.17587431455214,
+        "nominal_bootstrap95_percent": [
+          35.374718601338486,
+          40.976855285227735
+        ]
+      },
+      "SFT": {
+        "mean_percent": 39.23325727491122,
+        "nominal_bootstrap95_percent": [
+          36.48059396385343,
+          42.057629461555784
+        ]
+      }
+    }
+  },
+  "y_axis_percent_limits": [
+    0,
+    50
+  ]
+}

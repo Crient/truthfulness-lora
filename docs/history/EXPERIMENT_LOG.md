@@ -1,3 +1,5 @@
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+
 # Chronological Experiment Log
 
 **Snapshot through November 4, 2026.** This is a research audit trail intended to remain append-only as future work proceeds. Dates embedded in SLURM logs/result filenames are reproduced as recorded; their timezone was not independently established. Filenames, logs, code and trainer-state records are different types of evidence and are labeled accordingly.

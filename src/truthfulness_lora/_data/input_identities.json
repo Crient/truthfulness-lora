@@ -1,0 +1,29 @@
+{
+  "base_model": "Qwen/Qwen3-1.7B",
+  "base_revision": "70d244cc86ccca08cf5af4e1e306ecf908b1ad5e",
+  "base_files_sha256": {
+    "config.json": "1ddb5b89ebc90dcb417a45c213d818577e65976454d29385c8f6140771d95197",
+    "generation_config.json": "2325da0f15bb848e018c5ae071b7943332e9f871d6b60e2ed22ca97d4cb993d2",
+    "model-00001-of-00002.safetensors": "169ad53ec313c3a34b06c0809216e4fc072cce444a5d4ff2b59690d064130ed5",
+    "model-00002-of-00002.safetensors": "912becff8d60672aa8628ef08c05898d9adf17c2ad4ae3caf99b065622fdeff9",
+    "tokenizer.json": "aeb13307a71acd8fe81861d94ad54ab689df773318809eed3cbe794b4492dae4",
+    "tokenizer_config.json": "d5d09f07b48c3086c508b30d1c9114bd1189145b74e982a265350c923acd8101"
+  },
+  "benchmark_sha256": "8b894abd32dbb2838ce800ab893c8cef1d09f29d3e32a8b5879fa26999cce094",
+  "ultrafeedback_revision": "770076f077c4c5e298498fa32f804857f46d5134",
+  "ultrafeedback_parquet_sha256": "27dc59041d73654aecfa7685b6f839a0bbb2014d640ee92eefa047b262d1f1ca",
+  "historical_adapters_sha256": {
+    "SFT": "4bfa8286577e7c4c9aae081e7d500067083223ee73af4da125701dfb0b4212ba",
+    "F2-Lite": "77cf712941156f7659ccdcaaaed29c4192a0da8d4be90b8f98b2ea955b8cc0e8",
+    "DPO": "b43bce700d1d0e9baa62a47ad21d2942ea762cb438f038c51b12acfdfe29adba"
+  },
+  "historical_halueval_split_arrow_sha256": {
+    "train": "059303dc49c1cd495381c39738e679d7fd0669b2594c0f72613453b4c4a91129",
+    "validation": "b2dc3a833ce7c054e64907c4f577d8c55e044cb2e013c9a378d17048e9988522"
+  },
+  "historical_ultrafeedback_split_jsonl_sha256": {
+    "train": "6b7dcb89a41185d0e70037a821bff83746510ba41179f007ddd4242b1af1e0ed",
+    "validation": "b06dc385d8357ba3007016197450a6f32199e4a1b5cbaec06e81147ec282ff8f"
+  },
+  "metadata_hash_note": "Historical byte identities only; a rebuilt Arrow serialization or reduced audit manifest may differ. No raw records are included."
+}
