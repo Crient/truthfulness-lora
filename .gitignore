@@ -61,3 +61,8 @@ outputs/
 !/results/model_identities.json
 !/results/scores.csv
 !/results/training_summary.json
+# Only the reviewed aggregate comparison figure and its provenance.
+!/results/figures/
+!/results/figures/truthfulqa_comparison.png
+!/results/figures/truthfulqa_comparison.svg
+!/results/figures/truthfulqa_comparison.json

@@ -1,0 +1,41 @@
+{
+  "checked_on": "2026-11-07",
+  "scope": "Primary-source notices/cards only; declared terms, not clearance or a project license grant",
+  "checks": [
+    {
+      "alias": "qwen_pinned_license",
+      "url": "https://huggingface.co/Qwen/Qwen3-1.7B/resolve/70d244cc86ccca08cf5af4e1e306ecf908b1ad5e/LICENSE",
+      "http_status": 200,
+      "sha256": "832dd9e00a68dd83b3c3fb9f5588dad7dcf337a0db50f7d9483f310cd292e92e",
+      "declaration": "Apache-2.0"
+    },
+    {
+      "alias": "halueval_pinned_card",
+      "url": "https://huggingface.co/datasets/pminervini/HaluEval/resolve/12a856119f03975a94509091e8cada3e6be6ead7/README.md",
+      "http_status": 200,
+      "sha256": "8036cd9948d7d92fe90700cdde156922811dadc738a67b702ed04c5b2639ad08",
+      "declaration": "apache-2.0"
+    },
+    {
+      "alias": "argilla_pinned_card",
+      "url": "https://huggingface.co/datasets/argilla/ultrafeedback-binarized-preferences-cleaned/resolve/770076f077c4c5e298498fa32f804857f46d5134/README.md",
+      "http_status": 200,
+      "sha256": "b0364fe4bbce4581dece22e0c5938695362edc9245135f59aae925173a18e770",
+      "declaration": "mit"
+    },
+    {
+      "alias": "truthfulqa_pinned_card",
+      "url": "https://huggingface.co/datasets/truthfulqa/truthful_qa/resolve/741b8276f2d1982aa3d5b832d3ee81ed3b896490/README.md",
+      "http_status": 200,
+      "sha256": "9e06075e7a580802a227e31cc456b37bdf5a174637f22e142b7609d709dd5f95",
+      "declaration": "apache-2.0"
+    },
+    {
+      "alias": "halueval_upstream_license",
+      "url": "https://raw.githubusercontent.com/RUCAIBox/HaluEval/main/LICENSE",
+      "http_status": 200,
+      "sha256": "2c33dad5fede86236b54db22e0be64e72095d151f324bcadd354ab88f40c52fe",
+      "declaration": "MIT"
+    }
+  ]
+}

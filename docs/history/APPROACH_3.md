@@ -1,4 +1,4 @@
-> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](APPROACHES.md), [matched results](RESULTS.md), [limitations](LIMITATIONS.md) and [release blockers](../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
 
 > Approach 3 was subsequently completed as exploratory UltraFeedback DPO. This earlier proposal does not establish preregistration or compliance with its proposed controls.
 

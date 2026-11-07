@@ -1,6 +1,6 @@
 # Final matched-protocol results
 
-The [November 4 results](HISTORICAL_RESULTS_20261104.md) remain preserved as a separate historical record. The earlier six-demonstration scores are not comparable to this table.
+The [November 4 results](history/HISTORICAL_RESULTS_20261104.md) remain preserved as a separate historical record. The earlier six-demonstration scores are not comparable to this table.
 
 The only headline results in this candidate use the frozen 817-question native-chat protocol. Historical six-demonstration harness evaluations are excluded from these comparisons. Values below are percentages or percentage-point differences; exact proportions and all individual/paired intervals are in [matched_results.json](../results/matched_results.json).
 

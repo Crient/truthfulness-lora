@@ -1,4 +1,4 @@
-> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](APPROACHES.md), [matched results](RESULTS.md), [limitations](LIMITATIONS.md) and [release blockers](../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
+> **Historical document — November 4, 2026 release snapshot.** The original text below is preserved for research continuity. For the completed four-model study, use [current methods](../APPROACHES.md), [matched results](../RESULTS.md), [limitations](../LIMITATIONS.md) and [release blockers](../../release/BLOCKERS.md). Earlier scores and pending-work statements describe that snapshot.
 
 > Historical report copied without changing its scientific claims. See RESULTS.md and AUDIT_AND_LIMITATIONS.md for the current interpretation, seed caveats, and bootstrap convention.
 

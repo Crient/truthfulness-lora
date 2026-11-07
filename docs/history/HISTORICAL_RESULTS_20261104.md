@@ -1,4 +1,4 @@
-> **Historical snapshot — November 4, 2026.** The original results text is retained below. These six-demonstration harness evaluations use a different protocol from the [final matched four-model results](RESULTS.md); their scores and provisional subgroup claims remain historical.
+> **Historical snapshot — November 4, 2026.** The original results text is retained below. These six-demonstration harness evaluations use a different protocol from the [final matched four-model results](../RESULTS.md); their scores and provisional subgroup claims remain historical.
 
 # Results, Paired Comparisons and Exploratory Findings
 

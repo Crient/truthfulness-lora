@@ -20,6 +20,17 @@ python -m unittest discover -s tests -p test_public.py -v
 
 CPU tensor tests additionally need torch/transformers/peft and the related pinned packages; then use `python -m unittest discover -s tests -v`. The optional real-template test needs a local pinned tokenizer via TL_TEST_TOKENIZER and otherwise reports a skip. Tests use invented examples and a tiny randomly initialized model, not pretrained weights or benchmark answer records.
 
+## Regenerate the aggregate comparison figure
+
+From the checkout root:
+
+```bash
+python -m pip install -e '.[figures]'
+python analysis/plot_results.py
+```
+
+The generator reads only `results/scores.csv` and `results/matched_results.json`, checks agreement of the saved means/intervals, and writes PNG, SVG and provenance JSON under `results/figures/`. The grouped chart uses a labeled 0–50% scale with a zero baseline; all four recipes receive equal styling. Whiskers are the saved nominal 95% item-bootstrap intervals, not new resamples or cross-seed uncertainty. No question text, model asset, GPU or network access is needed to draw it. Matplotlib is an optional dependency pinned in `pyproject.toml`; source distributions explicitly include the script and its aggregate inputs.
+
 ## Recorded training environment
 
 Python3.12.3, torch2.9.1+cu126, transformers4.57.6, peft0.18.1, tokenizers0.22.2, NumPy2.2.6 and supporting observed versions are pinned in [requirements-training.txt](../requirements-training.txt). It is not a full transitive/driver lock. The original DPO used a Quadro RTX8000, FP32/eager, disabled TF32 and19.852GiB peak allocated memory. Original SFT/F2 used A16 FP16; full replay needs compatible hardware. A Mac is suitable for inspection/lightweight tests, not this recorded CUDA training recipe.

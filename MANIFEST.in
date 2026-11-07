@@ -1,0 +1,8 @@
+# Keep figure regeneration available in source distributions, with no raw data.
+include CITATION.cff
+include analysis/plot_results.py
+include results/scores.csv
+include results/matched_results.json
+include results/figures/truthfulqa_comparison.png
+include results/figures/truthfulqa_comparison.svg
+include results/figures/truthfulqa_comparison.json

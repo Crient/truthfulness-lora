@@ -1,5 +1,7 @@
 # Private branch integration review — November 7, 2026
 
+> **Historical integration snapshot for commit `5ecf3de`.** Original review findings are retained below. Current layout, reported faculty sharing permission and publication decisions are documented in [PRESENTATION_REVIEW.md](PRESENTATION_REVIEW.md) and [BLOCKERS.md](BLOCKERS.md).
+
 Integrated `truthfulness-lora_release-candidate_20261107.zip` into the existing private `Crient/truthfulness-lora` repository on `research/final-release-review`. The base is `ead40cedad88e214d8033b3ecf0774e86e04e96a`. This review supports a private branch commit and push only; it does not authorize a merge or public publication.
 
 ## Initial state and preservation
@@ -8,7 +10,7 @@ Integrated `truthfulness-lora_release-candidate_20261107.zip` into the existing 
 - No staged or unstaged tracked changes existed. The only untracked file was `.DS_Store`; three ZIPs and the existing private `release_review/` artifacts were ignored. Their original bytes were preserved. `.DS_Store` is now ignored too.
 - The original commit remains the parent of the review work. No historical commit, notebook, script, result, private packet or Unity artifact was removed. The local `main` reference is unchanged.
 - Five notebooks, six Slurm launchers, two historical Python runners, the historical sample verifier, the original aggregate CSV and verification requirements retain their original bytes. Historical document bodies remain intact, with scope banners and links redirected to historical results where appropriate.
-- The original README narrative and results were preserved as [HISTORICAL_README_20261104.md](../docs/HISTORICAL_README_20261104.md) and [HISTORICAL_RESULTS_20261104.md](../docs/HISTORICAL_RESULTS_20261104.md). Only local links were adjusted in the archived README; the original README's exact bytes also remain available in the base commit.
+- The original README narrative and results were preserved as [HISTORICAL_README_20261104.md](../docs/history/HISTORICAL_README_20261104.md) and [HISTORICAL_RESULTS_20261104.md](../docs/history/HISTORICAL_RESULTS_20261104.md). Only local links were adjusted in the archived README; the original README's exact bytes also remain available in the base commit.
 - Researcher Gechleng (Leng) Lim, advisor Professor Salem Othman, Wentworth Institute of Technology and UMass Unity HPC attribution were retained. Attribution does not assert clearance or endorsement.
 
 ## Archive and integration decisions

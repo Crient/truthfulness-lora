@@ -2,7 +2,7 @@
 
 > **Transferred research narrative.** Independent recalculation and source-audit claims below describe the earlier private Unity review. Local branch integration checks aggregate consistency and packaging; it does not rerun item-level bootstraps, original inputs, training or model inference. See [the integration review](../release/INTEGRATION_REVIEW.md) for checks performed here.
 
-Sanitized narrative adapted from the completed private scientific review. Publication approval remains pending.
+Sanitized narrative adapted from the completed private scientific review. The researcher reports faculty permission to share the educational project; current distribution and licensing notes are in [RIGHTS_AND_NOTICES.md](RIGHTS_AND_NOTICES.md).
 
 ## Abstract
 
@@ -91,7 +91,7 @@ Within this conditional item-bootstrap procedure, all three DPO MC2 intervals ex
 
 ## 6. Exploratory error and sensitivity analysis
 
-All results in this section are post-hoc, descriptive analyses of the fixed outputs, without selection of a new model or checkpoint. Full item IDs and values are in [private item-level evidence (excluded)](../release/EXCLUDED_FILES.md); no raw training/benchmark answer text is copied into the new package.
+All results in this section are post-hoc, descriptive analyses of the fixed outputs, without selection of a new model or checkpoint. Full item IDs and values remain in the private research archive. The [exclusion inventory](../release/EXCLUDED_FILES.md) describes the transfer boundary; it does not contain those records. No raw training/benchmark answer text is copied into the new package.
 
 ### MC1 transitions
 
@@ -110,7 +110,7 @@ MC2 changes also occur without MC1 correction: 608 DPO/SFT items remain MC1-wron
 
 ### Unusually large differences and qualitative inspection
 
-[private item-level evidence (excluded)](../release/EXCLUDED_FILES.md) lists the ten largest gains and losses for each DPO comparison, with immutable benchmark IDs, scores and length/choice features. For DPO−SFT, the largest gain is item 640 (+0.827917), followed by 421 (+0.785094) and 734 (+0.738371). The largest losses are 112 (−0.872941), 47 (−0.547111) and 134 (−0.464349). These are selected extreme cases, not representative cases or independently adjudicated facts. Manual reading shows that items 640 and 734 move toward the benchmark’s qualified answers on organizing behavior and dietary fat. Item 421 gains large MC2 mass while retaining an incorrect MC1 top choice about a baby-bird myth. The losses include an unsupported universal dessert-consensus answer (112), a single-test psychopathy claim that stays MC1-wrong in both models (47), and a self-identity reversal (134). This mixed pattern does not establish a coherent improved factual skill or a validated error taxonomy; it records the benchmark labels and saved rankings without independent factual adjudication.
+The private item-level analysis, excluded from this repository, records the ten largest gains and losses for each DPO comparison, with immutable benchmark IDs, scores and length/choice features. [EXCLUDED_FILES.md](../release/EXCLUDED_FILES.md) documents exclusions, not the individual extreme-case results. For DPO−SFT, the largest gain is item 640 (+0.827917), followed by 421 (+0.785094) and 734 (+0.738371). The largest losses are 112 (−0.872941), 47 (−0.547111) and 134 (−0.464349). These are selected extreme cases, not representative cases or independently adjudicated facts. Manual reading shows that items 640 and 734 move toward the benchmark’s qualified answers on organizing behavior and dietary fat. Item 421 gains large MC2 mass while retaining an incorrect MC1 top choice about a baby-bird myth. The losses include an unsupported universal dessert-consensus answer (112), a single-test psychopathy claim that stays MC1-wrong in both models (47), and a self-identity reversal (134). This mixed pattern does not establish a coherent improved factual skill or a validated error taxonomy; it records the benchmark labels and saved rankings without independent factual adjudication.
 
 ### Answer length, choice structure and concentration
 

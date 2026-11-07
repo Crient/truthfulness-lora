@@ -1,11 +1,23 @@
-# Release decision: private candidate only
+# Publication decisions and reproduction boundaries
 
-The candidate has been integrated into the existing private repository on `research/final-release-review`. The user authorized this integration and a push of that review branch only. **Public publication remains blocked.** See [the integration review](INTEGRATION_REVIEW.md) for local verification; original preparation-time QC remains in [QC_REPORT.md](QC_REPORT.md).
+The presentation is prepared on the private `research/final-release-review` branch. This page supersedes preparation-time administrative language in archived candidate/QC records. It distinguishes publication choices from limitations of the experiment.
 
-1. **Rights/attribution:** exact HaluEval mirror/upstream license discrepancy; mixed-source response conditions; project-source ownership and applicable project license; pinned asset notices not all recovered. No blanket license is assigned.
-2. **Review/authorization:** determine applicable faculty/institutional/coauthor requirements; obtain any required approvals and the user's separate publication authorization. Prior scientific review is not publication clearance.
-3. **Portable replay validation:** minimal editable and wheel installations and synthetic CPU tests were checked locally. A full clean research/CUDA environment, original-input integration tests and GPU replay remain unverified. Do not advertise deterministic full reproduction or historical-score equality. Optional future GPU validation requires a separate research/resource decision; none is run here.
-4. **Repository review:** the actual checkout and private remote were inspected against base commit `ead40cedad88e214d8033b3ecf0774e86e04e96a`. Historical research is retained and no project license exists in that base tree. Review the integration diff before any merge. Private visibility and a local content scan do not establish ownership, publication permission or exhaustive secret detection.
-5. **Scientific claim scope:** retain single-seed, nominal item-bootstrap, source/recipe confounding, failed quality/shortcut gates, bounded leakage checks and MC1/MC2/free-generation distinctions. Stronger factual-learning/causal/seed-robust claims would require new evidence, not wording changes.
+## Decisions before public publication
 
-Private original experiments and review snapshots are preserved. No raw data/answers, weights, keys, reviewer packets, environments or operational logs are added. Remaining exact-source uncertainty is documented in [RIGHTS_AND_NOTICES.md](../docs/RIGHTS_AND_NOTICES.md) and reproduction gaps in [REPRODUCTION.md](../docs/REPRODUCTION.md). The branch is for private review only. No merge, public release, visibility change, new license, external message or GPU run is authorized by this integration.
+1. **Owner's publication decision.** Review the rendered README, public/archive inventory and historical provenance, then decide whether and when to make the existing repository public. This task authorizes review-branch commits/pushes only; it does not authorize visibility changes, a merge or a public release.
+2. **Project-code reuse terms.** No project license has been assigned. The owner should select any desired license covering project-authored code and confirm its scope; MIT is an option, not a grant made here. Preserve third-party attribution. Public visibility without a project license does not itself grant broad reuse rights.
+3. **Distribution scope.** Publish the reviewed code/documentation/aggregate evidence. Keep datasets, answer records, weights, checkpoints, private reviewer packets, credentials, logs, ZIPs, caches and environments outside version control. The [repository guide](../docs/REPOSITORY_GUIDE.md) explains which sanitized provenance files are safe but optional public material and how history remains visible.
+
+## Permission and source notices already recorded
+
+The researcher reports **Professor Salem Othman has given permission to share this educational fine-tuning work**. That account is accepted as reported faculty sharing permission; the same permission is not requested again and no written institutional instrument is asserted.
+
+Exact pinned Qwen, HaluEval mirror, Argilla and TruthfulQA notices/cards, plus the upstream HaluEval license, were retrieved for this review. Declared terms are Apache-2.0 or MIT. See [source notices](../docs/RIGHTS_AND_NOTICES.md) for hashes, the HaluEval mirror/upstream discrepancy and the boundary for mixed-source or future asset redistribution. No model/data assets are bundled here. Source ownership and the scope of any new project-wide reuse grant are not inferred from public availability.
+
+## Disclosed limitations, not publication prerequisites
+
+- Full clean research/CUDA installation, original-input integration and GPU replay remain unverified. Minimal installation, synthetic CPU tests and packaging checks have a narrower scope. A new GPU replay is optional future validation, not a condition for sharing this educational record honestly.
+- The preference-quality and answer-only shortcut gates remain failed. One seed, nominal item-bootstrap intervals, data/recipe/compute confounding, bounded leakage checks and post-hoc analyses limit claims. These are legitimate scientific limitations; stronger causal/factual/seed-robust claims would require new evidence.
+- MC1 and MC2 rank existing answer choices. Higher MC2 is not generated-answer factual accuracy or proof of broad hallucination reduction.
+
+Historical evidence is preserved. [PRESENTATION_REVIEW.md](PRESENTATION_REVIEW.md) records the latest checks; [INTEGRATION_REVIEW.md](INTEGRATION_REVIEW.md) records the earlier integration. No license grant, merge, visibility change, release or new model workload is part of this update.

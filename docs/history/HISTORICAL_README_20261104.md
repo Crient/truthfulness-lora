@@ -1,4 +1,4 @@
-> **Historical snapshot — November 4, 2026.** Original README narrative retained below; local links adjusted for this archival location. The completed four-model study is documented in [the current README](../README.md) and [matched results](RESULTS.md). Historical six-demonstration scores must not be combined with native-chat scores.
+> **Historical snapshot — November 4, 2026.** Original README narrative retained below; local links adjusted for this archival location. The completed four-model study is documented in [the current README](../../README.md) and [matched results](../RESULTS.md). Historical six-demonstration scores must not be combined with native-chat scores.
 
 # Truthfulness-Oriented LoRA Fine-Tuning of Qwen3-1.7B
 
@@ -85,8 +85,8 @@ The complete score evidence demonstrates a **negative overall result**, plus a n
 | [`docs/APPROACH_3.md`](APPROACH_3.md) | Pre-run protocol, hypotheses/ablation controls, and blank future-result tables |
 | [`docs/AUDIT_AND_LIMITATIONS.md`](AUDIT_AND_LIMITATIONS.md) | Claims ledger, inconsistencies corrected during review and research threats to validity |
 | [`docs/PUBLICATION_CHECKLIST.md`](PUBLICATION_CHECKLIST.md) | Responsible open-source release checklist and reproducibility priorities |
-| [`results/aggregate_metrics.csv`](../results/aggregate_metrics.csv) | Machine-readable complete-run and pilot score summary |
-| [`analysis/verify_truthfulqa_samples.py`](../analysis/verify_truthfulqa_samples.py) | Independent CPU-only verification of saved per-question results and paired bootstrap intervals |
+| [`results/aggregate_metrics.csv`](../../results/aggregate_metrics.csv) | Machine-readable complete-run and pilot score summary |
+| [`analysis/verify_truthfulqa_samples.py`](../../analysis/verify_truthfulqa_samples.py) | Independent CPU-only verification of saved per-question results and paired bootstrap intervals |
 
 ## Research code and evidence
 
