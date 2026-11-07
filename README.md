@@ -14,12 +14,32 @@ An exploratory undergraduate AI research study comparing four model recipes on *
 
 > **Main finding:** DPO achieved the highest MC2 (**42.050%**). Base retained the highest MC1 point estimate (**23.623%**); DPO was one correct question behind.
 
-| Model recipe | MC1 (%) | MC2 (%) |
-|:--|--:|--:|
-| Unmodified Qwen3-1.7B (Base) | **23.623** | 37.561 |
-| Supervised LoRA (SFT) | 22.399 | 39.233 |
-| F2-Lite | 21.053 | 38.176 |
-| SFT → exploratory DPO | 23.501 | **42.050** |
+| Approach | What we did | MC1 (%) ↑ | MC2 (%) ↑ |
+|:--|:--|--:|--:|
+| Base | Released Qwen3-1.7B checkpoint without additional project training. | **23.623** | 37.561 |
+| SFT | Standard LoRA fine-tuning using correct HaluEval answers. | 22.399 | 39.233 |
+| F2-Lite | Three-task LoRA combining direct QA, background retrieval and knowledge-grounded QA. | 21.053 | 38.176 |
+| DPO | SFT-initialized preference optimization using cleaned UltraFeedback preferences. | 23.501 | **42.050** |
+
+## Understanding the Four Approaches
+
+### Base — Released Qwen3-1.7B
+
+We evaluated the released Qwen3-1.7B checkpoint without additional training for this project. It established the baseline for measuring how each later adaptation changed the model's answer rankings. All four recipes used the same frozen 817-question benchmark and native-chat likelihood protocol.
+
+### SFT — Supervised Fine-Tuning
+
+Supervised fine-tuning teaches a model to predict provided target answers. We used LoRA to train small adapter weights on 9,500 HaluEval question-and-correct-answer examples while keeping the underlying pretrained weights frozen. We tested whether that supervision transferred to better answer selection on TruthfulQA.
+
+### F2-Lite — Multi-Objective Fine-Tuning
+
+F2-Lite extends the supervised setup with direct QA, background prediction and knowledge-grounded QA. Each source item produced three correlated records, yielding 28,500 training records from the same 9,500 examples; background prediction was supervised generation of supplied text. We tested whether this combined supervision changed answer selection, without reproducing the full Faithful Finetuning algorithm.
+
+### DPO — Direct Preference Optimization
+
+DPO learns from pairs of preferred and rejected responses. Starting from the SFT adapter, we used cleaned UltraFeedback preferences and a separate frozen SFT reference to favor the preferred responses. We tested the additional stage's effect on TruthfulQA; these general-quality preferences are not independent factuality labels.
+
+## Key findings
 
 - **Higher MC2, limited MC1 change.** DPO exceeded SFT by **+2.817 percentage points** in MC2 (nominal paired 95% CI: +1.783 to +3.891). Its MC1 change was +1.102 points (−0.490 to +2.693).
 - **Base retained the highest MC1 point estimate.** DPO ranked one fewer question correctly: 192 versus 193 out of 817. This is not evidence of equivalence.
@@ -35,16 +55,14 @@ How do supervised LoRA, an F2-inspired multi-objective recipe, and SFT-initializ
 
 All arms start from the released [`Qwen/Qwen3-1.7B`](https://huggingface.co/Qwen/Qwen3-1.7B) checkpoint. “Base” here means the unmodified released checkpoint, not the separately named `Qwen3-1.7B-Base` model.
 
-| Recipe | Starting point | Training signal |
-|:--|:--|:--|
-| Base | Released Qwen3-1.7B | No project adaptation |
-| SFT | Base | HaluEval questions → correct answers |
-| F2-Lite | Base | Direct QA, background retrieval and knowledge-grounded QA |
-| DPO | Completed SFT adapter | General-quality UltraFeedback preference pairs |
+| Setting | Recorded protocol |
+|:--|:--|
+| Source splits | SFT and F2-Lite share a **9,500 / 500** HaluEval source-item split; DPO uses a separate **9,500 / 500** UltraFeedback preference split. |
+| Adapters | SFT and F2-Lite use rank-16 LoRA adapters. DPO continues the SFT adapter with a separate frozen SFT reference. |
+| Checkpoint selection | Validation loss selects checkpoints; TruthfulQA scores do not select the DPO checkpoint. |
+| Evaluation | Same frozen questions, native-chat question wrapper and summed EOS-inclusive candidate log likelihoods for all four arms. |
 
-SFT and F2-Lite share a **9,500 / 500** HaluEval source-item split and rank-16 LoRA adapters. DPO uses a separate **9,500 / 500** UltraFeedback preference split and a frozen SFT reference. Validation loss selects checkpoints; TruthfulQA scores do not select the DPO checkpoint.
-
-Evaluation uses the same frozen questions, native-chat question wrapper and summed EOS-inclusive candidate log likelihoods for all four arms. F2-Lite is inspired by Faithful Finetuning, not a reproduction of the full method. The earlier six-demonstration harness results use a different protocol and remain in the [historical record](docs/history/README.md).
+The earlier six-demonstration harness results use a different protocol and remain in the [historical record](docs/history/README.md).
 
 [Full methods and settings](docs/APPROACHES.md) · [Data audit](docs/DATA_AUDIT.md) · [Input identities](configs/input_identities.json)
 
